@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>RideSafe - Map</title>
+        <link rel="stylesheet" href="css/mapStyle.css" />
+        <link rel="stylesheet" href="css/headerStyle.css" />
+        <link rel="stylesheet" href="css/leaflet.css" />
+        <script src="https://kit.fontawesome.com/b14c4de211.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <script src="js/header.js"></script>
+        <div class="content">
+            <div id="mapDiv" style="position: relative">
+                <div id="map" style="z-index: 1"></div>
+                <div id="locationDiv" style="position: absolute; top: 0px; left: 0px; margin-top: 20px; margin-left: 40px; border-radius: 10px; background-color: white; z-index: 2">
+                    <div id="locationHeading" style="padding: 20px 40px; padding-bottom: 10px; text-align: left; border-bottom: 1px solid lightgray">
+                        <p style="font-size: var(--lg-font)">Select a location</p>
+                        <p style="font-size: var(--sm-font)">To unlock locations</p>
+                    </div>
+                    <div id="locationDetails">
+                        <!--
+                            Element Template 
+                            <div id="locationElement1" class="locationElement locked">
+							<div class="locationElementLeftDiv">
+								LHS
+								<div class="flex" style="margin: 10px">
+									<em class="fa-solid fa-lock"></em>
+									<em class="fa-solid fa-unlock"></em>
+								</div>
+								<div id="location1">
+									img
+								</div>
+							</div>
+							<div class="locationElementRightDiv">
+								RHS
+								<div style="font-size: 1rem">
+									<p>Bikeway Name</p>
+									Name
+								</div>
+								<div style="font-size: 0.75rem">
+									<p>10m long</p>
+									<p>Google Maps: <a href="google.com">Directions</a></p>
+									Google Maps link
+								</div>
+							</div>
+						</div> -->
+                    </div>
+                    <div id="locationButton" class="flex" style="justify-content: right; padding: 10px 20px; border-top: 1px solid lightgray">
+                        <button onclick="location.href = 'start.html?locationNumber='+localStorage.getItem('locationNumber');">Unlock Locations&nbsp;></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="js/mapScript.js"></script>
+        <script src="js/leaflet.js"></script>
+    </body>
+</html>

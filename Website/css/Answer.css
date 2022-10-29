@@ -1,0 +1,151 @@
+.correct {
+  background-color: #ffffff;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.top {
+  display: flex;
+}
+
+.topL {
+  width: 50%;
+  height: 786px;
+}
+.topR{
+  width: 50%;
+  height: 786px;
+
+}
+.tLine1 {
+  position: absolute;
+  width: 139px;
+  height: 56.34px;
+  left: 100px;
+  top: 20px;
+}
+
+.tLine1txt1 {
+  font-family: 'Expletus Sans';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20.8px;
+  line-height: 125%;
+  /* or 26px */
+
+  letter-spacing: -0.832px;
+  text-transform: uppercase;
+
+  color: #1E1E1E;
+}
+
+.tLine1txt2 {
+  font-family: 'Expletus Sans';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 40.8px;
+  line-height: 125%;
+  /* or 26px */
+
+  letter-spacing: -0.832px;
+  text-transform: uppercase;
+
+  color: #048444;
+}
+
+.tLine2 {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 100px;
+  top: 199px;
+  border-radius: 50%;
+  background: #048444;
+  opacity: 0.1;
+}
+.tLine3{
+  position: absolute;
+left: 100px;
+right: 800px;
+top: 349px;
+bottom: 713px;
+font-family: 'Bungee Spice';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 60px;
+/* or 125% */
+
+letter-spacing: -1.2px;
+
+color: #333333;
+}
+.tLine4{
+  position: absolute;
+width: 530px;
+height: 120px;
+left: 100px;
+top: 484px;
+
+/* 2. Text / Text 1 20 pt */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+/* or 150% */
+
+letter-spacing: -0.3px;
+
+/* Gray/500 */
+
+color: #6D7280;
+}
+.tLine5{
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 15px 25px;
+gap: 11px;
+
+position: absolute;
+width: 182px;
+height: 52px;
+left: 100px;
+top: 634px;
+
+/* G1 */
+
+background: #048444;
+/* 1 dp */
+color: #ffffff;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05), 0px 2px 1px rgba(0, 0, 0, 0.03), 0px 1px 1px rgba(0, 0, 0, 0.04);
+border-radius: 36px;
+}
+
+.topR{
+  position: absolute;
+  right: 100px;
+  bottom: 75%;
+}
+
+.temp{
+  position: absolute;
+width: 543.53px;
+height: 340px;
+left: 710px;
+top: 246px;
+
+background: url(./images/Cert\ Template\ 1.png);
+border: 10px solid #F7F7F7;
+filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.03));
+}
+
+.tLine5 .button1{
+  color: white;
+  background: #048444;
+  border: none;
+}

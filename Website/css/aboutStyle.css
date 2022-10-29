@@ -1,0 +1,65 @@
+.name-tag {
+	display: block;
+	text-align: left;
+	line-height: 120%;
+	font-size: x-large;
+}
+
+.name-description {
+	display: block;
+	text-align: left;
+	line-height: 30px;
+	font-weight: 800;
+	margin-top: 5px;
+	font-size: medium;
+}
+
+.sub {
+    margin-top: 10px;
+}
+
+.team-contain {
+	margin-top: 20px;
+	display: flex;
+	max-width: 100%;
+	flex-wrap: wrap;
+}
+
+.team-contain * {
+	width: 400px;
+}
+
+.person {
+    font-family: 'Bungee';
+    margin-top: 20px;
+}
+
+#secondImg {
+    display: none;
+}
+
+@media only screen and (max-width: 1016px) {
+	#secondImg {
+		display: block;
+	}
+
+    .person {
+        margin-top: 50px;
+    }
+
+    .name-tag {
+        font-size: large;
+    }
+
+    .name-description {
+        font-size: small;
+    }
+
+    .person {
+        margin-top: 10px;
+    }
+
+    .sub {
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,45 @@
+body {
+	margin: 0;
+}
+
+.start-page-content {
+	font-family: "Inter";
+	text-align: center;
+}
+
+.start-page-content img {
+	height: 100vh;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+.start-quiz-prompt-box {
+	position: absolute;
+	background-color: white;
+	color: black;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 2%;
+	width: 40%;
+	border-radius: 10px;
+}
+
+.start-quiz-prompt-box p {
+	color: rgb(61, 61, 61);
+}
+
+.button {
+	border: 2px;
+	border-color: #27ae60;
+	background-color: #27ae60;
+	color: white;
+	border-radius: 20px;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin: 4px 2px;
+	cursor: pointer;
+}

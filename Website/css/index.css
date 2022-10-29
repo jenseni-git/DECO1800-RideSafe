@@ -1,0 +1,32 @@
+body { 
+  margin: 0;
+}
+
+.homepage-banner {
+  text-align: left;
+  font-family: 'Bungee';
+  color: white;
+}
+
+.center-left {
+  position: absolute;
+  bottom: 25%;
+  left: 5%;
+  right: 40%
+}
+
+.button {
+  border: 2px;
+  border-color: #27ae60;
+  background-color: #27ae60;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+

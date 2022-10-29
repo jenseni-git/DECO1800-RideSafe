@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ture</title>
+  <link rel="stylesheet" href="css/Answer.css" />
+  <link rel="stylesheet" href="css/headerStyle.css" />
+  <script src="https://kit.fontawesome.com/b14c4de211.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <script src="js/header.js"></script>
+  <div class="correct">
+    <div class="top">
+      <div class="topL">
+        <div class="tLine2"></div>
+        <div class="tLine3">
+          <span style="color: #333333;">Correct,</span>
+          <br>
+          <span style="color: #048444;"> Congratutations</span> 
+          <span style="color: #333333;">!</span>
+        </div>
+        <div class="tLine4">
+          <span>The maximum penalty a court can impose for the offence is 20 penalty units, which amounts to $2200, but most cases are dealt with by way of 'on-the-spot' fines in the sum of $344 (at the time of writing).</span>
+        </div>
+        <div class="tLine5">
+          <button class=button1 onClick="turn()">Next question</button>
+        </div>
+       
+      </div>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!4v1666719127684!6m8!1m7!1sW0trjg_W2TbqO026VN90wg!2m2!1d-27.50266254257497!2d153.031322736559!3f53.94345860323475!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="topR"></div>
+    </div>
+    <div class="mid"></div>
+    <div class="bottom"></div>
+  </div>
+  
+ 
+
+</body>
+
+</html>
+<script>
+  const urlParams = getQueryVariable()
+  // reference this method from https://blog.csdn.net/luck_yangl/article/details/102665737
+  function getQueryVariable() {
+    let href = window.location.href
+    let query = href.substring(href.indexOf('?') + 1);
+    let vars = query.split("&");
+    let obj = {}
+    for (var i = 0; i < vars.length; i++) {
+      let pair = vars[i].split("=");
+      obj[pair[0]] = pair[1]
+    }
+    return obj;
+  }
+
+  function turn() {
+    // 3 should be the total question numbers.
+    if (Number(urlParams.questionNumber) != 3) {
+      location.href = './Question.html?locationNumber=' + (Number(urlParams.locationNumber)) + '&questionNumber=' + (Number(urlParams.questionNumber) + 1) + '&correctTimes=' + (Number(urlParams.correctTimes));
+    } else {
+      alert("Thanks for your answer!")
+      if (Number(urlParams.correctTimes) >= 2) {
+        location.href = './End.html?locationNumber=' + (Number(urlParams.locationNumber));
+      } else {
+        location.href = `map.html`;
+      }
+    }
+  }
+</script>

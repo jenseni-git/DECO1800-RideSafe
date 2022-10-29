@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Question</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="js/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/questionIndex.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="left">
+                <span class="logotxt1">RIDE</span>
+                <span class="logotxt2">SAFE</span>
+            </div>
+            <div class="right">
+                <div class="progress-bar">
+                    <div class="fill"></div>
+                </div>
+                <!-- Return to the start page here-->
+                <a href="map.html" class="exitbtn">Exit Now</a>
+            </div>
+            <div class="banner">
+                <img src="images/questionBanner.png" alt="banner" />
+                <p class="banner-text">
+                    <img src="images/questionLock.png" alt="lock" class="lock" />
+                    Answer the question for unblocking the 360 degree view.
+                </p>
+                <div class="banner-pagination"><span class="current"></span><span class="total">/</span></div>
+            </div>
+        </header>
+
+        <div class="main">
+            <div id="question">
+                <div class="question-total"></div>
+                <div class="question-content"></div>
+                <div class="question-options"></div>
+            </div>
+            <div class="buttons">
+                <div class="skip-btn">Skip</div>
+                <div class="submit-btn">Submit</div>
+            </div>
+        </div>
+
+        <template id="questionOption">
+            <link rel="stylesheet" type="text/css" href="css/questionOption.css" />
+            <div class="content"></div>
+        </template>
+        <script src="js/question.js"></script>
+    </body>
+
+
+</html>

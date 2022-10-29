@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Ride Safe - Answer</title>
+        <link rel="stylesheet" href="css/headerStyle.css" />
+        <link rel="stylesheet" type="text/css" href="css/stylekb.css" />
+    </head>
+
+    <body>
+        <div class="wrap">
+            <script src="js/header.js"></script>
+
+            <div class="fhp">←Back to map</div>
+            <div class="wzcon">
+                <div class="jdt">
+                    <div class="dda"></div>
+                    <div class="ddb"></div>
+                    <div class="ddc"></div>
+                    <div class="dqjd">Correct</div>
+                </div>
+                <p>xxxxxxxxxxxxxxxxxxxx</p>
+                <p>xxxxxxxxxxxxxxxxxxxx</p>
+                <p>xxxxxxxxxxxxxxxxxxxx</p>
+                <p>xxxxxxxxxxxxxxxxxxxx</p>
+            </div>
+            <div class="adress">
+                <div class="adtb">Address</div>
+                <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                <div style="text-align: center">
+                    <button onClick="turn()">Next question</button>
+                </div>
+            </div>
+        </div>
+        <div class="yctp">
+            <img src="images/1.jpg" onClick="show()" />
+        </div>
+        <div class="zsbox" id="zsbox">
+            <div class="gban" onClick="closed()">close</div>
+        </div>
+        <script>
+            const urlParams = getQueryVariable();
+            function show() {
+                document.getElementById("zsbox").style.display = "block";
+            }
+            function closed() {
+                document.getElementById("zsbox").style.display = "none";
+            }
+
+            // reference this method from https://blog.csdn.net/luck_yangl/article/details/102665737
+            function getQueryVariable() {
+                let href = window.location.href;
+                let query = href.substring(href.indexOf("?") + 1);
+                let vars = query.split("&");
+                let obj = {};
+                for (var i = 0; i < vars.length; i++) {
+                    let pair = vars[i].split("=");
+                    obj[pair[0]] = pair[1];
+                }
+                return obj;
+            }
+
+            function turn() {
+                // 5 should be the total question numbers.
+                if (Number(urlParams.questionNumber) != 5) {
+                    location.href =
+                        `./Question.html?questionNumber=` +
+                        (Number(urlParams.questionNumber) + 1);
+                } else {
+                    alert("Thanks for your answer!");
+                    location.href = `./Endquiz.html`;
+                }
+            }
+        </script>
+    </body>
+
+</html>

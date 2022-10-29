@@ -1,0 +1,177 @@
+body {
+	margin: 0;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	height: 200px;
+	padding: 10px 10% 0;
+	position: relative;
+}
+
+.logotxt1,
+.logotxt2 {
+	font-family: 'Expletus Sans';
+	font-style: italic;
+	font-weight: 500;
+	letter-spacing: -0.832px;
+}
+
+.logotxt1 {
+	font-size: 20.8px;
+	color: #1e1e1e;
+}
+
+.logotxt2 {
+	font-size: 40.8px;
+	color: #048444;
+}
+
+.progress-bar {
+	display: inline-block;
+	width: 80px;
+	height: 10px;
+	background-color: #e6f3ed;
+	border-radius: 10px;
+	margin-right: 20px;
+}
+
+.fill {
+	background-color: #048444;
+	height: 100%;
+	border-radius: 10px;
+}
+
+.exitbtn {
+	text-decoration: none;
+	color: #048444;
+	background-color: #e6f3ed;
+	width: 100px;
+	height: 45px;
+	border-radius: 20px;
+	display: inline-block;
+	text-align: center;
+	line-height: 45px;
+	font-weight: 800;
+	font-size: 0.9em;
+}
+
+.banner {
+	position: absolute;
+	width: 80%;
+	left: 10%;
+	top: 150px;
+}
+
+.banner > img {
+	width: 100%;
+	height: 120px;
+	border-radius: 20px;
+}
+
+.lock {
+	width: 16px;
+}
+
+.banner-text {
+	color: #ffffff;
+	position: absolute;
+	top: 60px;
+	left: 40px;
+	font-size: 0.8em;
+	font-weight: 300;
+}
+
+.banner-pagination {
+	font-family: 'Impact';
+	position: absolute;
+	top: 30px;
+	right: 40px;
+	font-weight: bold;
+	font-size: 3em;
+	margin: 0;
+	letter-spacing: 6px;
+}
+
+.current {
+	color: #ffffff;
+}
+
+.total {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.main {
+	background-color: #f5f5f5;
+	padding: 100px 0;
+}
+
+#question {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+#question .question-total {
+	margin-bottom: 20px;
+	color: #bbbbbb;
+	font-size: 14px;
+}
+
+#question .question-content {
+	font-size: 1.6em;
+	font-weight: 600;
+	margin-bottom: 20px;
+	width: 60%;
+	text-align: center;
+}
+
+#question .question-options {
+	width: 80%;
+	display: grid;
+	grid-template-columns: auto auto;
+	padding: 0 25px;
+	column-gap: 10px;
+	row-gap: 10px;
+}
+
+.buttons {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.skip-btn {
+	background: #048444;
+	color: #fff;
+	padding: 10px 20px 10px 20px;
+	font-size: 16px;
+	width: max-content;
+	border-radius: 20px;
+	margin: 0 10%;
+	cursor: pointer;
+}
+
+.submit-btn {
+	background: #048444;
+	color: #fff;
+	padding: 10px 40px 10px 10px;
+	position: relative;
+	font-size: 16px;
+	width: max-content;
+	border-radius: 20px;
+	margin: 0 10%;
+	cursor: pointer;
+}
+
+.submit-btn::after {
+	content: '>';
+	color: #fff;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	right: 10px;
+	top: 24%;
+}
