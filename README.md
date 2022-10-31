@@ -1,6 +1,6 @@
 # DECO1800-RideSafe
 Ridesafe is a Quiz website designed to teach international students about bicycle safety in Australia.
-This project was completed as part of a team in the DECO1800 Web API course.
+This project was completed as part of a team in the DECO1800 Web API course between 20/8/2022 and 26/10/2022.
 The brief was to create an engaging website that would get users to interact with a government API dataset of some form, or more specifically:
 >In teams of 4-5, you will conceptualise and build a web-based interactive application incorporating open government datasets that creates values for a particular group of users. The application will present data available from various governments jurisdictions within Australia, including from council, state, territory, and the commonwealth. Teams should explore how data from one or more datasets could be presented, combined, visualised, explored in a meaningful way through an interactive
 application.
